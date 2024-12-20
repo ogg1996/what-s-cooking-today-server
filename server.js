@@ -1,16 +1,33 @@
 const jsonServer = require("json-server");
 const express = require("express");
+const cors = require("cors");
 const { getRegExp } = require("korean-regexp");
 const lodash = require("lodash");
 
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://dev.whatscookingtoday.kro.kr",
+  "https://whatscookingtoday.kro.kr",
+];
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+};
+
+server.use(cors(corsOptions));
 
 server.use("/images/basic", express.static("images/basic"));
 server.use("/images/cooking", express.static("images/cooking"));
 
-server.use(middlewares);
 server.use(router);
 
 server.get("/searchRecipe", (req, res) => {
@@ -40,7 +57,7 @@ server.get("/searchRecipe", (req, res) => {
   const startIndex = (page - 1) * limit;
   const responseData = sortData.slice(startIndex, startIndex + limit);
 
-  res.jsonp({
+  res.json({
     total: sortData.length,
     page,
     limit,
@@ -82,7 +99,7 @@ server.get("/suggestRecipe", (req, res) => {
 
   const responseData = filteredData[randomIndex];
 
-  res.jsonp(responseData);
+  res.json(responseData);
 });
 
 server.get("/recipeList", (req, res) => {
@@ -120,7 +137,7 @@ server.get("/recipeList", (req, res) => {
   const startIndex = (page - 1) * limit;
   const responseData = filteredData.slice(startIndex, startIndex + limit);
 
-  res.jsonp({
+  res.json({
     total: filteredData.length,
     page,
     limit,
@@ -145,7 +162,7 @@ server.get("/recipeDetail", (req, res) => {
     (item) => item.RECIPE_ID === id
   );
 
-  res.jsonp({
+  res.json({
     basicData: filteredBasicData,
     ingredientsData: filteredIngredientsData,
     cookingData: filteredCookingData,
