@@ -28,8 +28,6 @@ server.use(cors(corsOptions));
 server.use("/images/basic", express.static("images/basic"));
 server.use("/images/cooking", express.static("images/cooking"));
 
-server.use(router);
-
 server.get("/search", (req, res) => {
   const query = req.query.query;
 
