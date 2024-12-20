@@ -7,11 +7,11 @@ const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
-server.use(middlewares);
-server.use(router);
-
 server.use("/images/basic", express.static("images/basic"));
 server.use("/images/cooking", express.static("images/cooking"));
+
+server.use(middlewares);
+server.use(router);
 
 server.get("/searchRecipe", (req, res) => {
   const query = req.query.query;
