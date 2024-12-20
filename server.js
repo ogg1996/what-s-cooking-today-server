@@ -30,7 +30,7 @@ server.use("/images/cooking", express.static("images/cooking"));
 
 server.use(router);
 
-server.get("/searchRecipe", (req, res) => {
+server.get("/search", (req, res) => {
   const query = req.query.query;
 
   if (!query) {
@@ -66,7 +66,7 @@ server.get("/searchRecipe", (req, res) => {
   });
 });
 
-server.get("/suggestRecipe", (req, res) => {
+server.get("/suggest", (req, res) => {
   const foodType = req.query.foodType;
   const db = router.db;
 
@@ -102,7 +102,7 @@ server.get("/suggestRecipe", (req, res) => {
   res.json(responseData);
 });
 
-server.get("/recipeList", (req, res) => {
+server.get("/list", (req, res) => {
   const foodType = req.query.foodType;
   const db = router.db;
 
@@ -146,7 +146,7 @@ server.get("/recipeList", (req, res) => {
   });
 });
 
-server.get("/recipeDetail", (req, res) => {
+server.get("/detail", (req, res) => {
   const id = parseInt(req.query.id, 10);
   const db = router.db;
 
