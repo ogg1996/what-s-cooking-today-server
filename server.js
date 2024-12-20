@@ -1,17 +1,17 @@
-import jsonServer from "json-server";
-import express from "express";
-import { getRegExp } from "korean-regexp";
-import lodash from "lodash";
+const jsonServer = require("json-server");
+const express = require("express");
+const { getRegExp } = require("korean-regexp");
+const lodash = require("lodash");
 
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
-server.use("/images/basic", express.static("images/basic"));
-
-server.use("/images/cooking", express.static("images/cooking"));
-
 server.use(middlewares);
+server.use(router);
+
+server.use("/images/basic", express.static("images/basic"));
+server.use("/images/cooking", express.static("images/cooking"));
 
 server.get("/searchRecipe", (req, res) => {
   const query = req.query.query;
@@ -151,8 +151,6 @@ server.get("/recipeDetail", (req, res) => {
     cookingData: filteredCookingData,
   });
 });
-
-server.use(router);
 
 server.listen(3000, () => {
   console.log("JSON Server is running port:3000");
