@@ -3,7 +3,7 @@
 
 ![Node.js](https://img.shields.io/badge/Node.js-16.x-green) 
 ![Express](https://img.shields.io/badge/Express.js-4.x-blue)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![License](https://img.shields.io/badge/License-ISC-yellow)
 
 ## 📌 프로젝트 소개
 이 프로젝트는 🍳 **[오늘 뭐 해먹지?](https://github.com/ogg1996/what-s-cooking-today)** 프로젝트에서 활용되는 API 서버입니다.
@@ -16,7 +16,11 @@
 
 ### 🛠 사용 기술
 - **Backend:** `Node.js`, `Express.js`, `json-server`
-- **Utilities:** [`korean-regexp`](https://github.com/JerryKhw/korean-regexp)
+- **Utilities:** [`korean-regexp`](https://github.com/JerryKhw/korean-regexp), `lodash`, `CORS`
+
+## 📊 데이터 출처
+이 프로젝트의 데이터는 다음 출처에서 가져왔습니다:
+- **출처:** [공공 데이터 포털](https://www.data.go.kr/)
 
 ## 🚀 시작하기
 
@@ -197,141 +201,7 @@ GET /detail?id=1
       "IRDNT_TY_CODE": "3060001",
       "IRDNT_TY_NM": "주재료"
     },
-    {
-      "ROW_NUM": 3,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 3,
-      "IRDNT_NM": "콩나물",
-      "IRDNT_CPCTY": "20g",
-      "IRDNT_TY_CODE": "3060001",
-      "IRDNT_TY_NM": "주재료"
-    },
-    {
-      "ROW_NUM": 4,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 4,
-      "IRDNT_NM": "청포묵",
-      "IRDNT_CPCTY": "1/2모",
-      "IRDNT_TY_CODE": "3060001",
-      "IRDNT_TY_NM": "주재료"
-    },
-    {
-      "ROW_NUM": 5,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 5,
-      "IRDNT_NM": "미나리",
-      "IRDNT_CPCTY": "20g",
-      "IRDNT_TY_CODE": "3060001",
-      "IRDNT_TY_NM": "주재료"
-    },
-    {
-      "ROW_NUM": 6,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 6,
-      "IRDNT_NM": "소금",
-      "IRDNT_CPCTY": "약간",
-      "IRDNT_TY_CODE": "3060003",
-      "IRDNT_TY_NM": "양념"
-    },
-    {
-      "ROW_NUM": 7,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 7,
-      "IRDNT_NM": "국간장",
-      "IRDNT_CPCTY": "약간",
-      "IRDNT_TY_CODE": "3060003",
-      "IRDNT_TY_NM": "양념"
-    },
-    {
-      "ROW_NUM": 8,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 8,
-      "IRDNT_NM": "다진파",
-      "IRDNT_CPCTY": "약간",
-      "IRDNT_TY_CODE": "3060003",
-      "IRDNT_TY_NM": "양념"
-    },
-    {
-      "ROW_NUM": 9,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 9,
-      "IRDNT_NM": "다진마늘",
-      "IRDNT_CPCTY": "약간",
-      "IRDNT_TY_CODE": "3060003",
-      "IRDNT_TY_NM": "양념"
-    },
-    {
-      "ROW_NUM": 10,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 10,
-      "IRDNT_NM": "참기름",
-      "IRDNT_CPCTY": "약간",
-      "IRDNT_TY_CODE": "3060003",
-      "IRDNT_TY_NM": "양념"
-    },
-    {
-      "ROW_NUM": 11,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 11,
-      "IRDNT_NM": "고추장",
-      "IRDNT_CPCTY": "1/2큰술",
-      "IRDNT_TY_CODE": "3060002",
-      "IRDNT_TY_NM": "부재료"
-    },
-    {
-      "ROW_NUM": 12,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 12,
-      "IRDNT_NM": "설탕",
-      "IRDNT_CPCTY": "약간",
-      "IRDNT_TY_CODE": "3060003",
-      "IRDNT_TY_NM": "양념"
-    },
-    {
-      "ROW_NUM": 13,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 13,
-      "IRDNT_NM": "숙주",
-      "IRDNT_CPCTY": "20g",
-      "IRDNT_TY_CODE": "3060001",
-      "IRDNT_TY_NM": "주재료"
-    },
-    {
-      "ROW_NUM": 14,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 14,
-      "IRDNT_NM": "도라지",
-      "IRDNT_CPCTY": "20g",
-      "IRDNT_TY_CODE": "3060001",
-      "IRDNT_TY_NM": "주재료"
-    },
-    {
-      "ROW_NUM": 15,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 15,
-      "IRDNT_NM": "고사리",
-      "IRDNT_CPCTY": "20g",
-      "IRDNT_TY_CODE": "3060001",
-      "IRDNT_TY_NM": "주재료"
-    },
-    {
-      "ROW_NUM": 16,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 16,
-      "IRDNT_NM": "계란",
-      "IRDNT_CPCTY": "1개",
-      "IRDNT_TY_CODE": "3060001",
-      "IRDNT_TY_NM": "주재료"
-    },
-    {
-      "ROW_NUM": 17,
-      "RECIPE_ID": 1,
-      "IRDNT_SN": 17,
-      "IRDNT_NM": "양지머리",
-      "IRDNT_CPCTY": "100g",
-      "IRDNT_TY_CODE": "3060002",
-      "IRDNT_TY_NM": "부재료"
-    }
+    ...
   ],
   "cookingData": [
     {
@@ -348,29 +218,28 @@ GET /detail?id=1
       "STEP_TIP": "",
       "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/cooking/image_1_2.jpg"
     },
-    {
-      "RECIPE_ID": 1,
-      "STEP": 3,
-      "DESC": "청포묵은 고기와 비슷한 크기로 잘라 끓는 물에 데쳐내고 계란은 노른자와 흰자를 분리해 지단부쳐 곱게 채썬다.",
-      "STEP_TIP": "",
-      "IMG_URL": ""
-    },
-    {
-      "RECIPE_ID": 1,
-      "STEP": 4,
-      "DESC": "콩나물과 숙주, 미나리는 데쳐서 국간장과 참기름으로 간하고, 고사리와 도라지는 참기름을 두른 프라이팬에 살짝 볶아놓는다.",
-      "STEP_TIP": "",
-      "IMG_URL": ""
-    },
-    {
-      "RECIPE_ID": 1,
-      "STEP": 5,
-      "DESC": "밥을 참기름으로 무쳐 그릇에 담고 준비한 재료를 고루 얹는다.",
-      "STEP_TIP": "",
-      "IMG_URL": ""
-    }
+    ...
   ]
 }
 ```
 
+## 🌍 배포 URL
+이 프로젝트는 다음 URL에서 사용할 수 있습니다:
 
+🔗 **Base URL:** [`https://aluminum-halved-bactrosaurus.glitch.me`](https://aluminum-halved-bactrosaurus.glitch.me)
+
+### 📡 주요 API 엔드포인트
+| 기능 | 엔드포인트 |
+|------|------------|
+| **레시피 검색** | [`https://aluminum-halved-bactrosaurus.glitch.me/search?query=ㅅㄹㄷ&page=1&limit=3`](https://aluminum-halved-bactrosaurus.glitch.me/search?query=ㅅㄹㄷ&page=1&limit=3) |
+| **랜덤 추천** | [`https://aluminum-halved-bactrosaurus.glitch.me/suggest?foodType=kor`](https://aluminum-halved-bactrosaurus.glitch.me/suggest?foodType=kor) |
+| **레시피 목록** | [`https://aluminum-halved-bactrosaurus.glitch.me/list?foodType=jpn&page=2&limit=5`](https://aluminum-halved-bactrosaurus.glitch.me/list?foodType=jpn&page=2&limit=5) |
+| **레시피 상세** | [`https://aluminum-halved-bactrosaurus.glitch.me/detail?id=1`](https://aluminum-halved-bactrosaurus.glitch.me/detail?id=1) |
+
+📌 **Glitch 서버 사용 안내**
+- 이 프로젝트는 **Glitch 무료 플랜**을 사용하여 배포되었습니다.
+- **서버가 유휴 상태(비활성화)일 경우, 첫 요청 시 최대 1분 정도 걸릴 수 있습니다.**  
+  (서버가 "깨어나는" 동안 대기 시간이 발생할 수 있음)
+- 이후 요청은 **빠르게 응답**됩니다.
+
+🔹 **Tip:** 미리 한 번 API를 호출해두면 서버가 활성화된 상태로 유지될 수 있습니다. 🚀
