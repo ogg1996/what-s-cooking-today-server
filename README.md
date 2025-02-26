@@ -20,7 +20,9 @@
 
 ## 📊 데이터 출처
 이 프로젝트의 데이터는 다음 출처에서 가져왔습니다:
-- **출처:** [공공 데이터 포털](https://www.data.go.kr/)
+- **출처1:** [공공 데이터 포털 - 레시피 기본정보](https://data.mafra.go.kr/opendata/data/indexOpenDataDetail.do?data_id=20150827000000000464)
+- **출처2:** [공공 데이터 포털 - 레시피 재료정보](https://data.mafra.go.kr/opendata/data/indexOpenDataDetail.do?data_id=20150827000000000465)
+- **출처3:** [공공 데이터 포털 - 레시피 과정정보](https://data.mafra.go.kr/opendata/data/indexOpenDataDetail.do?data_id=20150827000000000466)
 
 ## 🚀 시작하기
 
@@ -32,7 +34,7 @@ npm install
 ```
 ### 2️⃣ 실행 방법
 ```
-npm run start
+npm start
 ```
 
 ## 🛠 API 사용법
