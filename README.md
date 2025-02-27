@@ -33,7 +33,7 @@ cd 저장 위치
 npm install
 ```
 ### 2️⃣ 실행 방법
-```
+``` bash
 npm start
 ```
 
