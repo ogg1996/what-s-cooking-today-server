@@ -238,7 +238,7 @@ GET /detail?id=1
 | **레시피 목록** | [`https://aluminum-halved-bactrosaurus.glitch.me/list?foodType=jpn&page=2&limit=5`](https://aluminum-halved-bactrosaurus.glitch.me/list?foodType=jpn&page=2&limit=5) |
 | **레시피 상세** | [`https://aluminum-halved-bactrosaurus.glitch.me/detail?id=1`](https://aluminum-halved-bactrosaurus.glitch.me/detail?id=1) |
 
-📌 **Glitch 서버 사용 안내**
+📌 **서버 사용 안내**
 - 이 프로젝트는 **Glitch 무료 플랜**을 사용하여 배포되었습니다.
 - **서버가 유휴 상태(비활성화)일 경우, 첫 요청 시 최대 1분 정도 걸릴 수 있습니다.**  
   (서버가 "깨어나는" 동안 대기 시간이 발생할 수 있음)
