@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const { getRegExp } = require("korean-regexp");
 const lodash = require("lodash");
+const { job } = require('./cron.js');
 
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
@@ -168,4 +169,6 @@ server.get("/detail", (req, res) => {
 
 server.listen(3000, () => {
   console.log("JSON Server is running port:3000");
+
+  job.start();
 });

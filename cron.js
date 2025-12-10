@@ -1,9 +1,9 @@
-import cron from 'node-cron';
-import axios from 'axios';
+const cron = require('node-cron');
+const axios = require('axios');
 
 const BACKEND_URL = '';
 
-export const job = cron.schedule(
+const job = cron.schedule(
   '*/5 * * * *',
   async () => {
     try {
@@ -17,3 +17,5 @@ export const job = cron.schedule(
     scheduled: false
   }
 );
+
+module.exports = { job };
