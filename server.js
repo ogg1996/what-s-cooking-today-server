@@ -9,7 +9,7 @@ const router = jsonServer.router("db.json");
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://whatscookingtoday.kro.kr",
+  "https://whatscookingtoday.netlify.app",
 ];
 
 const corsOptions = {
