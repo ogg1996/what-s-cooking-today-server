@@ -28,6 +28,10 @@ server.use(cors(corsOptions));
 server.use("/images/basic", express.static("images/basic"));
 server.use("/images/cooking", express.static("images/cooking"));
 
+server.get("/is-wake-up", (req, res) => {
+  res.json({ success: true, message: '오늘 뭐해먹지?' });
+})
+
 server.get("/search", (req, res) => {
   const query = req.query.query;
 
