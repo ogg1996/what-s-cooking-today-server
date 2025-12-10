@@ -9,7 +9,6 @@ const router = jsonServer.router("db.json");
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://dev.whatscookingtoday.kro.kr",
   "https://whatscookingtoday.kro.kr",
 ];
 
