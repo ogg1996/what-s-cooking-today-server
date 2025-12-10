@@ -62,7 +62,7 @@ GET /search?query=ㅅㄹㄷ&page=1&limit=3
       "TYPE": "양식",
       "COOKING_TIME": "20분",
       "LEVEL": "쉬움",
-      "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/basic/image_141.jpg"
+      "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/basic/image_141.jpg"
     },
     {
       "RECIPE_ID": 394,
@@ -71,7 +71,7 @@ GET /search?query=ㅅㄹㄷ&page=1&limit=3
       "TYPE": "한식",
       "COOKING_TIME": "30분",
       "LEVEL": "쉬움",
-      "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/basic/image_394.jpg"
+      "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/basic/image_394.jpg"
     },
     {
       "RECIPE_ID": 139,
@@ -80,7 +80,7 @@ GET /search?query=ㅅㄹㄷ&page=1&limit=3
       "TYPE": "한식",
       "COOKING_TIME": "60분",
       "LEVEL": "보통",
-      "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/basic/image_139.jpg"
+      "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/basic/image_139.jpg"
     }
   ]
 }
@@ -103,7 +103,7 @@ GET /suggest?foodType=kor
   "TYPE": "한식",
   "COOKING_TIME": "20분",
   "LEVEL": "보통",
-  "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/basic/image_90.jpg"
+  "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/basic/image_90.jpg"
 }
 ```
 
@@ -131,7 +131,7 @@ GET /list?foodType=jpn&page=2&limit=4
       "TYPE": "일식",
       "COOKING_TIME": "60분",
       "LEVEL": "보통",
-      "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/basic/image_127.jpg"
+      "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/basic/image_127.jpg"
     },
     {
       "RECIPE_ID": 197,
@@ -140,7 +140,7 @@ GET /list?foodType=jpn&page=2&limit=4
       "TYPE": "일식",
       "COOKING_TIME": "20분",
       "LEVEL": "쉬움",
-      "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/basic/image_197.jpg"
+      "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/basic/image_197.jpg"
     },
     {
       "RECIPE_ID": 226,
@@ -149,7 +149,7 @@ GET /list?foodType=jpn&page=2&limit=4
       "TYPE": "일식",
       "COOKING_TIME": "60분",
       "LEVEL": "어려움",
-      "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/basic/image_226.jpg"
+      "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/basic/image_226.jpg"
     },
     {
       "RECIPE_ID": 263,
@@ -158,7 +158,7 @@ GET /list?foodType=jpn&page=2&limit=4
       "TYPE": "일식",
       "COOKING_TIME": "30분",
       "LEVEL": "쉬움",
-      "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/basic/image_263.jpg"
+      "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/basic/image_263.jpg"
     }
   ]
 }
@@ -182,7 +182,7 @@ GET /detail?id=1
     "TYPE": "한식",
     "COOKING_TIME": "60분",
     "LEVEL": "보통",
-    "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/basic/image_1.jpg"
+    "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/basic/image_1.jpg"
   },
   "ingredientsData": [
     {
@@ -211,14 +211,14 @@ GET /detail?id=1
       "STEP": 1,
       "DESC": "양지머리로 육수를 낸 후 식혀 기름을 걷어낸 후, 불린 쌀을 넣어 고슬고슬하게 밥을 짓는다.",
       "STEP_TIP": "",
-      "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/cooking/image_1_1.jpg"
+      "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/cooking/image_1_1.jpg"
     },
     {
       "RECIPE_ID": 1,
       "STEP": 2,
       "DESC": "안심은 불고기 양념하여 30분간 재워 국물 없이 구워 한 김 식으면 한입 크기로 자른다.",
       "STEP_TIP": "",
-      "IMG_URL": "https://aluminum-halved-bactrosaurus.glitch.me/images/cooking/image_1_2.jpg"
+      "IMG_URL": "https://what-s-cooking-today-server.onrender.com/images/cooking/image_1_2.jpg"
     },
     ...
   ]
@@ -233,10 +233,10 @@ GET /detail?id=1
 ### 📡 주요 API 엔드포인트
 | 기능 | 엔드포인트 |
 |------|------------|
-| **레시피 검색** | [`https://aluminum-halved-bactrosaurus.glitch.me/search?query=ㅅㄹㄷ&page=1&limit=3`](https://aluminum-halved-bactrosaurus.glitch.me/search?query=ㅅㄹㄷ&page=1&limit=3) |
-| **랜덤 추천** | [`https://aluminum-halved-bactrosaurus.glitch.me/suggest?foodType=kor`](https://aluminum-halved-bactrosaurus.glitch.me/suggest?foodType=kor) |
-| **레시피 목록** | [`https://aluminum-halved-bactrosaurus.glitch.me/list?foodType=jpn&page=2&limit=5`](https://aluminum-halved-bactrosaurus.glitch.me/list?foodType=jpn&page=2&limit=5) |
-| **레시피 상세** | [`https://aluminum-halved-bactrosaurus.glitch.me/detail?id=1`](https://aluminum-halved-bactrosaurus.glitch.me/detail?id=1) |
+| **레시피 검색** | [`https://what-s-cooking-today-server.onrender.com/search?query=ㅅㄹㄷ&page=1&limit=3`](https://what-s-cooking-today-server.onrender.com/search?query=ㅅㄹㄷ&page=1&limit=3) |
+| **랜덤 추천** | [`https://what-s-cooking-today-server.onrender.com/suggest?foodType=kor`](https://what-s-cooking-today-server.onrender.com/suggest?foodType=kor) |
+| **레시피 목록** | [`https://what-s-cooking-today-server.onrender.com/list?foodType=jpn&page=2&limit=5`](https://what-s-cooking-today-server.onrender.com/list?foodType=jpn&page=2&limit=5) |
+| **레시피 상세** | [`https://what-s-cooking-today-server.onrender.com/detail?id=1`](https://what-s-cooking-today-server.onrender.com/detail?id=1) |
 
 📌 **서버 사용 안내**
 - 이 프로젝트는 **Glitch 무료 플랜**을 사용하여 배포되었습니다.
