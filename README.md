@@ -228,7 +228,7 @@ GET /detail?id=1
 ## 🌍 배포 URL
 이 프로젝트는 다음 URL에서 사용할 수 있습니다:
 
-🔗 **Base URL:** [`https://aluminum-halved-bactrosaurus.glitch.me`](https://aluminum-halved-bactrosaurus.glitch.me)
+🔗 **Base URL:** [`https://aluminum-halved-bactrosaurus.glitch.me`](https://what-s-cooking-today-server.onrender.com)
 
 ### 📡 주요 API 엔드포인트
 | 기능 | 엔드포인트 |
@@ -239,9 +239,7 @@ GET /detail?id=1
 | **레시피 상세** | [`https://what-s-cooking-today-server.onrender.com/detail?id=1`](https://what-s-cooking-today-server.onrender.com/detail?id=1) |
 
 📌 **서버 사용 안내**
-- 이 프로젝트는 **Glitch 무료 플랜**을 사용하여 배포되었습니다.
+- 이 프로젝트는 **Render 무료 플랜**을 사용하여 배포되었습니다.
 - **서버가 유휴 상태(비활성화)일 경우, 첫 요청 시 최대 1분 정도 걸릴 수 있습니다.**  
   (서버가 "깨어나는" 동안 대기 시간이 발생할 수 있음)
 - 이후 요청은 **빠르게 응답**됩니다.
-
-🔹 **Tip:** 미리 한 번 API를 호출해두면 서버가 활성화된 상태로 유지될 수 있습니다. 🚀
