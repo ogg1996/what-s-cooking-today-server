@@ -228,7 +228,7 @@ GET /detail?id=1
 ## 🌍 배포 URL
 이 프로젝트는 다음 URL에서 사용할 수 있습니다:
 
-🔗 **Base URL:** [`https://aluminum-halved-bactrosaurus.glitch.me`](https://what-s-cooking-today-server.onrender.com)
+🔗 **Base URL:** [`https://what-s-cooking-today-server.onrender.com`](https://what-s-cooking-today-server.onrender.com)
 
 ### 📡 주요 API 엔드포인트
 | 기능 | 엔드포인트 |
